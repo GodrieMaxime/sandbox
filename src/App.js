@@ -5,6 +5,7 @@ import Loader from './Components/Loader/Loader';
 import ImageGrid from './Patterns/ImageGrid/ImageGrid';
 
 const App = () => {
+    const API_KEY = process.env.REACT_APP_API_KEY;
     const axios = require('axios').default;
     const [isLoading, setLoading] = useState(false);
     const [results, setResults] = useState([]);
@@ -36,7 +37,7 @@ const App = () => {
             headers: {
                 'Content-Type': 'application/json',
                 'Accept': 'application/json',
-                'Authorization': 'Client-ID 4EoTPXmAzxFtCw0sj9gLX8pfEpLITLUPfKTpL1K59Lo'
+                'Authorization': API_KEY
             }
         })
             .then(function (response) {
