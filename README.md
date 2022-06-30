@@ -22,6 +22,10 @@ Appart from that all the `tests` are passing and I tried to give it a little UI 
 - [ ] Finish end to end testing
 - [ ] Tokens for spacing and sizing 
 - [ ] Compile tokens from YML to JS
+- [ ] Pagination
+- [ ] In depth browser testing
+- [ ] Accessibility testing, voice over etc
+
 
 ## Getting Started
 
