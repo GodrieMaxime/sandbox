@@ -1,5 +1,8 @@
 # Maxime Godrie Interview - Annalise.ai - Image Search
 
+<img width="1474" alt="image" src="https://user-images.githubusercontent.com/24380407/176680172-1defae53-c244-43d7-bed1-548c3ffd000f.png">
+
+
 ## Notes for Interviewers
 
 Hi guys,
