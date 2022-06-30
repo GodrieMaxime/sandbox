@@ -25,7 +25,7 @@ describe('Loader', () => {
 
     it('should render identifying attributes when provided', async () => {
         render(<Loader { ...props } />);
-        const loader = screen.getByTestId('loader-testid');
+        const loader = screen.getByTestId('loader');
         expect(loader).toContainHTML('class', 'className');
         expect(loader).toContainHTML('id', 'id');
     });

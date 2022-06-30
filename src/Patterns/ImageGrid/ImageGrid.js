@@ -5,7 +5,7 @@ import * as StyledImageGrid from './ImageGrid.styled';
 
 const ImageGrid = ({ className, id, list }) => {
     return (
-        <StyledImageGrid.Container className={ className } id={ id } data-testid='imagegrid-testid'>
+        <StyledImageGrid.Container className={ className } id={ id } data-testid='imagegrid'>
             {list.map(item => (
                 <Card imgSrc={ item.url } imgAlt={ item.alt_description } key={ item.id }></Card>
             ))}

@@ -25,7 +25,7 @@ describe('Card', () => {
 
     it('should render identifying attributes when provided', async () => {
         render(<Card { ...props } />);
-        const card = screen.getByTestId('card-testid');
+        const card = screen.getByTestId('card');
         expect(card).toContainHTML('class', 'className');
         expect(card).toContainHTML('id', 'id');
     });

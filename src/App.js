@@ -73,14 +73,14 @@ const App = () => {
                 {!nameSubmitted ?
                     <>
                         <label htmlFor='name'>Enter your name: </label>
-                        <input type='text' id='name' onChange={ (e) => setName(e.target.value) }></input>
+                        <input type='text' id='name' onChange={ (e) => setName(e.target.value) } data-testid='name-input'></input>
                         <input type='button' value='Submit' onClick={ onSubmitName }></input>
                     </>
                     :
                     <>
                         <h2>Hello, { name } !</h2>
                         <label htmlFor='search'>Search for an image: </label>
-                        <input type='text' id='search' value={ searchValue } onChange={ (e) => setSearchValue(e.target.value) }></input>
+                        <input type='text' id='search' value={ searchValue } onChange={ (e) => setSearchValue(e.target.value) } data-testid='search-input'></input>
                         <input type='button' value='Search' onClick={ onSubmitSearch }></input>
                         <ImageGrid list={ results }/>
                     </>

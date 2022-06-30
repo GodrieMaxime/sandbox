@@ -25,6 +25,9 @@ export const Header = styled.header`
 `;
 export const Container = styled.main`
     padding-bottom: 60px;
+    h1,h2,p, label {
+        color: #fff;
+    }
 `;
 
 export const Footer = styled.footer`

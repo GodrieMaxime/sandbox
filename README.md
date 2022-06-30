@@ -1,10 +1,38 @@
-# Getting Started with Create React App
+# Maxime Godrie Interview - Annalise.ai - Image Search
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Notes for Interviewers
+
+Hi guys,
+
+I went with a simple approach of `create-react-app` coupled with `styled-components`. I have added `eslint` to the project as a default linter onSave. It has a set of rules that I like and find useful, I am aware that companies have different preferences. It also includes an `automated` accessibility rule to make sure developers write better code.
+I went with a `token`, `components` and `patterns` approach which is what I call them at my current place of work. Each of the components or patterns have their own styling and testing files. I have setup a `card` component because I was going to make the images a little nicer and include a bit of description or maybe the amount of likes on each photo from the API. I have added a simple `loader` for feedback and also very basic error handling which could be improved of course.
+The unit testing is done with `react-testing-library`, `jest` and `axe` for automated accessibility testing. The unit testing is simple, small and targets one area at the time incrementally. Although I haven't made full usage of `jest` assertions due to timeboxing to 3h or so, they would be really helpful when the project scales up. I am using test-ids when necessary, otherwise I like to target the elements by role with `getByRole` to avoid code bloating.
+The project isn't using `Typescript` but just `PropTypes` as I thought it would be faster to set everything up in he 3 hours.
+The API is handled with `Unsplash API` and `Axios`, I used `axios` to make sure it was a promise based HTTP client. 
+I kept things simple running into the `App.js` and because the exercise said `screens` it wasn't too clear if you meant pages or not I have kept it on the same page but due to the single page application nature it can trick the user into thinking they are going to a separate part of the application. In design it is common to call `screens` different interactions that can happen on the same page.
+The `.env` file is in the frontend although I would prefer to see the API calls happen on a third layer in the backend and not expose API keys. It isn't commited on Github and needs to be setup locally.
+The website is `responsive` but by all means so much more needs to be done styling wise for me to be happy about it, although I understand it isn't the focus of the exercise ... `tokens`, `colors`, `sizes`, spacing should be using `rems` etc etc ...
+Appart from that all the `tests` are passing and I tried to give it a little UI kick in the due time.
+
+
+
+## TODO
+
+- [ ] Create reusable api functions to fetch data
+- [ ] Finish end to end testing
+- [ ] Tokens for spacing and sizing 
+- [ ] Compile tokens from YML to JS
+
+## Getting Started
+
+0. Create and `.env` file in the root of you folder and reach out to your team to get the API key for the Image Search.
+1. `yarn install`
+2. `yarn start`
+3. open [http://localhost:3000](http://localhost:3000)
 
 ## Available Scripts
 
-In the project directory, you can run:
+In the project directory, you can run : 
 
 ### `yarn start`
 
@@ -39,32 +67,3 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

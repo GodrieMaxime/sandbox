@@ -4,7 +4,7 @@ import * as StyledCard from './Card.styled';
 
 const Card = ({ className, id, children, imgSrc, imgAlt }) => {
     return (
-        <StyledCard.Container className={ className } id={ id } data-testid='card-testid'>
+        <StyledCard.Container className={ className } id={ id } data-testid='card'>
             <StyledCard.Img src={ imgSrc } alt={ imgAlt } />
         </StyledCard.Container>
     );

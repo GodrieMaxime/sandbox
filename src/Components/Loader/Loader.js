@@ -6,7 +6,7 @@ const Loader = ({ className, id, imgSrc, isActive }) => {
     return (
         <>
             { isActive &&
-                <StyledLoader.Container className={ className } id={ id } data-testid='loader-testid'>
+                <StyledLoader.Container className={ className } id={ id } data-testid='loader'>
                     <StyledLoader.Img src={ imgSrc } alt='Loader image' />
                 </StyledLoader.Container>
             }

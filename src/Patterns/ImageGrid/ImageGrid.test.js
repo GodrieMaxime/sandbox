@@ -41,7 +41,7 @@ describe('Loader', () => {
 
     it('should render identifying attributes when provided', async () => {
         render(<ImageGrid { ...props } />);
-        const loader = screen.getByTestId('imagegrid-testid');
+        const loader = screen.getByTestId('imagegrid');
         expect(loader).toContainHTML('class', 'className');
         expect(loader).toContainHTML('id', 'id');
     });
