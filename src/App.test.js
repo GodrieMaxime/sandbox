@@ -1,8 +1,22 @@
 import { render, screen } from '@testing-library/react';
+import { toHaveNoViolations } from 'jest-axe';
+import { axe } from './Utils/Tests/Config';
 import App from './App';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+describe('App page', () => {
+    expect.extend(toHaveNoViolations);
+
+    it('should not have any accessibility violations', async () => {
+        const { baseElement } = render(<App/> );
+        const results = await axe(baseElement);
+
+        expect(results).toHaveNoViolations();
+    });
+
+    test('renders template of the page', () => {
+        render(<App />);
+        const footer = screen.getByText('Maxime Godrie - Test 2022');
+        expect(footer).toBeInTheDocument();
+    });
+
 });
