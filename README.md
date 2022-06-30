@@ -32,10 +32,10 @@ Appart from that all the `tests` are passing and I tried to give it a little UI 
 
 ## Getting Started
 
-0. Create and `.env` file in the root of you folder and create an account on [https://unsplash.com/documentation](https://unsplash.com/documentation)
+0. Create and `.env` file in the root of you folder and create an account on [https://unsplash.com/documentation](https://unsplash.com/documentation) to get your private API key.
 1. Add `REACT_APP_API_KEY='YOURKEY'` to the `.env` file.
-2. `yarn install`
-3. `yarn start`
+2. run `yarn install` in the root folder
+3. run `yarn start` in the root folder
 4. open [http://localhost:3000](http://localhost:3000)
 
 ## Available Scripts
