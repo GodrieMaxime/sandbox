@@ -10,7 +10,7 @@ The unit testing is done with `react-testing-library`, `jest` and `axe` for auto
 The project isn't using `Typescript` but just `PropTypes` as I thought it would be faster to set everything up in he 3 hours.
 The API is handled with `Unsplash API` and `Axios`, I used `axios` to make sure it was a promise based HTTP client. 
 I kept things simple running into the `App.js` and because the exercise said `screens` it wasn't too clear if you meant pages or not I have kept it on the same page but due to the single page application nature it can trick the user into thinking they are going to a separate part of the application. In design it is common to call `screens` different interactions that can happen on the same page.
-The `.env` file is in the frontend although I would prefer to see the API calls happen on a third layer in the backend and not expose API keys. It isn't commited on Github and needs to be setup locally.
+The `.env` file is in the frontend although I would prefer to see the API calls happen on a third layer in the backend and not expose API keys. It isn't commited on Github and needs to be setup locally. Now I understand this is an interview but getting closer to production standards I won't be disclosing my personal key on the email or in the readme. I understand it's not ideal but it's best practice.
 The website is `responsive` but by all means so much more needs to be done styling wise for me to be happy about it, although I understand it isn't the focus of the exercise ... `tokens`, `colors`, `sizes`, spacing should be using `rems` etc etc ...
 Appart from that all the `tests` are passing and I tried to give it a little UI kick in the due time.
 
@@ -25,10 +25,11 @@ Appart from that all the `tests` are passing and I tried to give it a little UI 
 
 ## Getting Started
 
-0. Create and `.env` file in the root of you folder and reach out to your team to get the API key for the Image Search.
-1. `yarn install`
-2. `yarn start`
-3. open [http://localhost:3000](http://localhost:3000)
+0. Create and `.env` file in the root of you folder and create an account on [https://unsplash.com/documentation](https://unsplash.com/documentation)
+1. Add `REACT_APP_API_KEY='YOURKEY'` to the `.env` file.
+2. `yarn install`
+3. `yarn start`
+4. open [http://localhost:3000](http://localhost:3000)
 
 ## Available Scripts
 
